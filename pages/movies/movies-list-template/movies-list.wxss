@@ -1,0 +1,44 @@
+@import "../movies-template/movie.wxss";
+
+.movies-list-template {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.inner-container{
+    margin:0 auto 20rpx;
+}
+
+.movies-header {
+  padding: 30rpx 20rpx 30rpx;
+  /*display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  用了justify-content 下面的vertical-align就失效了
+ */
+}
+.slogan{
+     /*padding-top:13rpx;*/
+}
+
+.more {
+  float: right;
+}
+
+.more-text {
+    
+  margin-right: 10rpx;
+  color: #1f4ba5;
+  vertical-align: middle; /*垂直居中*/
+}
+
+.more-img {
+  width: 9rpx;
+  height: 16rpx;
+  vertical-align: middle; /*垂直居中*/
+}
+
+.movies-template {
+  display: flex;
+  flex-direction: row;
+}

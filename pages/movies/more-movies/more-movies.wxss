@@ -1,0 +1,5 @@
+/* pages/movies/more-movies/more-movies.wxss */
+@import "../movies-grid-template/movies-grid.wxss";
+.more-moives-container{
+    background-color: #f2f2f2;
+}

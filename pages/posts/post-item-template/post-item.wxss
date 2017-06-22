@@ -1,0 +1,69 @@
+.post-container{
+    display:flex;
+    /*弹性盒子模型*/
+    flex-direction: column;
+    /*分为列模型*/
+    margin-top:20rpx;
+    margin-bottom:40rpx;
+    background-color:#fff;
+    border-bottom: 1rpx solid #ededed;
+    border-top:#ededed;
+    padding-bottom:5px;
+    width:750rpx;
+}
+.post-author-date{
+     margin-top:10rpx;
+     margin-bottom:20rpx;
+     margin-left:10rpx;
+     font-size: 28rpx;
+ }
+ .post-author{
+     width:60rpx;
+     height:60rpx;
+     vertical-align:middle;
+     margin-left:10rpx;
+ }
+ .post-date{
+     margin-left:20rpx;
+     vertical-align:middle;/*垂直居中*/
+     margin-bottom:10rpx;
+     font-size:34rpx; 
+ }
+ .post-title{
+  
+     font-weight:600;
+     color:#333;
+     margin:0 0 10px 20px;
+ }
+ .post-image{
+     width:750rpx;
+     height:340rpx;
+     margin-left:16rpx;
+     margin:auto 0;
+     margin-bottom:20rpx;
+ }
+ .post-content{
+     color:#666;
+     font-size:34rpx;
+     margin-bottom:20rpx;
+     margin-left:20rpx;
+     letter-spacing:2rpx;/*字体间距*/
+     line-height:40rpx;
+ }
+ .post-like{
+     font-size:25rpx;
+     flex-direction:row;
+     line-height:16px;
+    margin-left:10px; 
+ }
+ .post-like-image{
+     width:16px;
+     height: 16px;
+     margin-left:10rpx;
+     margin-right: 10px;
+     vertical-align:middle;/*垂直居中*/
+ }
+ .post-like-font{
+     vertical-align:middle;/*垂直居中*/
+     margin-right:10px;
+ }

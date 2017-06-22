@@ -1,0 +1,29 @@
+
+<!--布尔值只要是有字符串就为真-->
+<import src="post-item-template/post-item.wxml" />
+<view>
+  <swiper catchtap="onSwiperTap" vertical="{{false}}" indicator-dots="true" autoplay="true" current="0" interval="5000" duration="2000">
+    <swiper-item>
+      <image src="/image/post/bl.png"data-postid="3"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/post/vr.png"data-postid="4"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/post/xiaolong.jpg"data-postid="5"></image>
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{postlist}}" wx:for-item="item"wx:key="{{postlist}}">
+
+    <!--template模板技术,实现模板的引用，实现多页面的复用-->
+
+    <!--data-XX-XX这是自定义属性-->
+    <view catchtap="onposttap" data-postid="{{item.postid}}">
+      <template is="postitem" data="{{...item}}" />
+    </view>
+
+    <!--如果是一个item则是相当于一个posts-local-database.js下的posts-local-database[]下的{}一个数组对象-->
+
+    <!--如果item前面加三个小点的话就相当于数组下的属性平铺到data数据中-->
+  </block>
+</view>

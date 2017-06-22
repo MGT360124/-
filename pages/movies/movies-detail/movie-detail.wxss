@@ -1,0 +1,149 @@
+/* pages/movies/movies-detail/movie-detail.wxss */
+@import "../stars-template/star.wxss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-img {
+  width: 100%;
+  height: 320rpx;
+  filter: blur(16rpx);/*模糊效果*/
+}
+
+.head-img-hover {
+  height: 320rpx;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+   position: absolute;
+  font-weight: bold;
+  color: aliceblue;
+  left: 50rpx;
+  top: 30rpx;
+  font-size: 35rpx;
+  letter-spacing: 5rpx; /*字体间距*/
+}
+
+.sub-title {
+   position: absolute;
+  color: aliceblue;
+  left: 50rpx;
+  top: 130rpx;
+  font-size: 30rpx;
+  letter-spacing: 4rpx;
+}
+  .like{
+    display: flex;
+    flex-direction:row;
+  }
+
+.like text:first-child {
+  position: absolute;
+  color: brown;
+  top: 200rpx;
+  left: 50rpx;
+}
+.like text:nth-child(2){
+  color:#666;
+  position: absolute;
+  top: 200rpx;
+  left: 140rpx;
+}
+.like text:nth-child(3){
+  position: absolute;
+  color: brown;
+  top: 200rpx;
+  left: 250rpx;
+}
+.like text:nth-child(4){
+  position: absolute;
+  top: 200rpx;
+  left: 350rpx;
+    color:#666;
+}
+.movie-img{
+  position:absolute;
+  right:0;
+  top:250rpx;
+  width:300rpx;
+  height:200rpx;
+}
+.summary{
+  display:flex;
+  flex-direction: column;
+
+}
+.original-title{
+  margin-top:30rpx;
+  margin-left:50rpx;
+  margin-bottom: 30rpx;
+  color:#666;
+  font-size:30rpx;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+  color:#999;
+}
+.mark{
+margin-left:50rpx;
+margin-right:30rpx;
+}
+.gap{
+  margin-top:30rpx;
+  margin-bottom: 50rpx;
+  border: 2rpx #d9d9d9 solid;
+}
+.introduction{
+  display: flex;
+  flex-direction: column;
+}
+.plot-introduction{
+  margin-left:50rpx;
+}
+.introduction-contraner{
+  margin-left:50rpx;
+  margin-right:20rpx;
+  margin-top:20rpx;
+}
+.casts{
+  display: flex;
+  flex-direction: column;
+}
+.casts text:nth-child(1){
+  margin-left:50rpx;
+  margin-bottom: 20rpx;
+}
+
+.cast-container{
+  margin-bottom: 50rpx;
+  margin-left: 20rpx;
+   display: inline-flex;
+  flex-direction:column;
+  width:200rpx;
+  text-align: center;/*文字处在图片的正下方居中*/
+  white-space: normal;/*文字自动换行*/
+}
+.cast-imgs{
+  width:100%;
+  white-space: nowrap;
+}
+.cast-img{
+  width:200rpx;
+  height:210rpx;
+
+}
+.cast-name{
+  margin:10rpx auto 0;
+  word-break: break-all;
+}

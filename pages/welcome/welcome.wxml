@@ -1,0 +1,11 @@
+
+<!--事件前面要加bind绑定事件-->
+
+<!--bindtap是一个冒泡事件，而catchtap是一个非冒泡事件-->
+<view class="container">
+  <image class="img" src="/image/avatar/5.png"></image>
+  <text class="user">hello,毛国涛</text>
+  <view class="moto-container" catchtap="tap">
+    <text class="moto">开启小程序</text>
+  </view>
+</view>

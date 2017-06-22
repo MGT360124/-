@@ -1,0 +1,23 @@
+
+<!--pages/movies/movie.wxml-->
+<import src="movies-list-template/movies-list.wxml" />
+<import src="movies-grid-template/movies-grid.wxml"/>
+<view class="search">
+<icon type="search" size="13" color="#405f80" class="search-img"></icon>
+<input type="text" placeholder="你的名字"placeholder-class="placeholder"bindfocus="onBindFocus"bindblur="onBindBlur"/>
+<icon type="clear" catchtap="onCancelTap"class="clear-img"wx:if="{{searchContainerShow}}"></icon>
+</view>
+<view class="container"wx:if="{{containerShow}}">
+  <view class="movies-gap">
+    <template is="movies-list-template" data="{{...inTheaters}}"/>
+  </view>
+  <view class="movies-gap">
+    <template is="movies-list-template"data="{{...comingSoon}}" />
+  </view>
+  <view class="movies-gap">
+    <template is="movies-list-template"data="{{...Top250}}" />
+  </view>
+</view>
+<view class="search-container"wx:if="{{searchContainerShow}}"> 
+<template is="moviesGridTemplate" data="{{... searchResult}}"/>
+</view>

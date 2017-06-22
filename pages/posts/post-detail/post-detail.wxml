@@ -1,0 +1,23 @@
+
+<!--先静后动，先样式后数据ctrl+/是加注释的快捷键，ctrl+p查找的快捷键,ctrl+shift+f是代码格式化-->
+<view calss="container">
+  <image class="head-image" src="{{isplayingmusic?postdetailData.music.cover:postdetailData.post_detail_head_img}}"></image>
+  <image catchtap="onmusictap" class="music-start-img" src="{{isplayingmusic?'/image/music/music-stop.png':'/image/music/music-start.png'}}"></image>
+  <view class="author-date">
+    <image class="author-image" src="{{postdetailData.post_detial_author_img}}"></image>
+    <text class="author">{{postdetailData.post_detail_author}}</text>
+    <text class="published">发表于</text>
+    <text class="time">{{postdetailData.post_detail_time}}</text>
+  </view>
+  <text class="title">{{postdetailData.post_detial_title}}</text>
+  <view class="tool">
+    <view class="circle-img">
+      <image wx:if="{{collected}}" catchtap="oncollectiontap" src="/image/icon/collection.png"></image>
+      <image wx:else catchtap="oncollectiontap" src="/image/icon/collection-anti.png"></image>
+      <image catchtap="onsharetap" class="share-img" src="/image/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="content">{{postdetailData.post_detail_content}}
+  </text>
+</view>

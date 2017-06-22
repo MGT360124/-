@@ -1,0 +1,110 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /*弹性盒子模型，列模型*/
+  position: relative;
+}
+
+.head-image {
+  width: 750rpx;
+  height: 460rpx;
+}
+
+.music-start-img {
+  width: 100rpx;
+  height: 110rpx;
+  position: absolute; /*绝对定位脱离文档流有z-index属性，其父元素设置position:relavite属性*/
+  left: 50%;
+  margin-left: -51rpx; /* le f  t  50%和margin-left：-51rpx垂直水平居中设计*/
+  top: 160rpx;
+  opacity: 0.6; /*设置透明度*/
+}
+
+.author-image {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+}
+
+.author-date {
+  flex-direction: row;
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+}
+
+.author {
+  font-size: 30rpx;
+  font-weight: 300;
+  color: #666;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.published {
+  font-size: 24rpx;
+  font-weight: 300;
+  color: #999;
+  margin: 0 20rpx;
+  vertical-align: middle; /*文本上下居中*/
+}
+
+.time {
+  font-size: 24rpx;
+  font-weight: 300;
+  color: #666;
+  vertical-align: middle; /*文本上下居中*/
+}
+
+.title {
+  margin-left: 40rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-top: 30rpx;
+  letter-spacing: 2rpx; /*字体间距*/
+  color: #4b556c;
+}
+
+.tool {
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+
+.circle-img {
+  float: right;
+  margin-right: 40rpx;
+  vertical-align: middle;
+  margin-bottom: 20rpx;
+}
+
+.horizon {
+  width: 660rpx;
+  height: 1px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  position: relative;
+  top: 46rpx;
+  margin: 0 auto;
+  z-index: -99;
+}
+
+.circle-img image {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.share-img {
+  margin-right:20rpx;
+  margin-left: 20rpx;
+}
+
+.content {
+  display: flex;
+  text-align: 4px;
+  color: #666;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  line-height: 44rpx;
+  letter-spacing: 2px;
+}

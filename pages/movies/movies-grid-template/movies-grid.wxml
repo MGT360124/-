@@ -1,0 +1,11 @@
+<import src="../movies-template/movie.wxml"/>
+<!--<scroll-view>不能设置display:flex;和flex-direction属性-->
+<template name="moviesGridTemplate">
+<view   onReachBottom="onReachBottom" class="moreMOviesContainer">
+<block wx:for="{{movies}}" wx:for-item="moreMovies" wx:key="{{movies}}">
+<view class="single-view-container">
+<template is="movies-template" data="{{...moreMovies}}"/>
+</view>
+</block>
+</view>
+</template>

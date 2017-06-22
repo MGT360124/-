@@ -1,0 +1,17 @@
+<template name="startemplate">
+  <view class="star-container">
+  <view class="star">
+  <block  wx:for="{{stars}}" wx:for-item="i"wx:key="{{stars}}">
+  <!--这里的i表示[1,1,1,1,1]中的的1-->
+   <image  wx:if="{{i==1}}" src="/image/icon/star.png"></image>
+   <image  wx:else  src="/image/icon/none-star.png"></image>
+  </block>
+    <!--<image src="/image/icon/star.png"></image>
+    <image src="/image/icon/star.png"></image>
+    <image src="/image/icon/star.png"></image>
+    <image src="/image/icon/star.png"></image>
+    <image src="/image/icon/star.png"></image>-->
+    </view>
+    <text class="star-score">{{score}}</text>
+  </view>
+</template>
